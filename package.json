@@ -1,6 +1,6 @@
 {
   "name": "@niirux/hrnet-modal",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Accessible modal dialog component for React (HRnet project)",
   "main": "./dist/hrnet-modal.umd.js",
   "module": "./dist/hrnet-modal.es.js",
