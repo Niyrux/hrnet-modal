@@ -5,12 +5,22 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: "index.jsx", 
+      entry: "index.jsx",
       name: "HrnetModal",
       fileName: (format) => `hrnet-modal.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: [
+        "react",
+        "react-dom",
+        "react/jsx-runtime"
+      ],
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM"
+        }
+      }
     },
   },
 });
